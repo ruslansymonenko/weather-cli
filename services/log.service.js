@@ -14,6 +14,7 @@ const printHelp = () => {
       ${chalk.bgCyan(' HELP ')}
       ${chalk.cyan('Without parameters')} - showing weather
       ${chalk.cyan('-c [CITY]')} for city selection
+      ${chalk.cyan('-s')} show weather
       ${chalk.cyan('-h')} for help
       ${chalk.cyan('-t [API_KEY]')} for saving token
     `
