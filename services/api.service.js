@@ -2,7 +2,7 @@ import { getKey, TOKEN_DICTIONARY } from './storage.service.js';
 import axios from 'axios';
 
 const getWeather = async (city) => {
-  const token = await getKey(TOKEN_DICTIONARY.token);
+  const token = process.env.TOKEN ?? await getKey(TOKEN_DICTIONARY.token);
 
   if (!token) {
     throw new Error('Api key was not set. Add it by command -t [API_KEY]');
